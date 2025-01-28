@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Neutral background color */
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #575757;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff; /* Keeping the section background white */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding neutral background colors to specific sections */
+#about {
+    background-color: #e0e0e0; /* Light gray for About section */
+}
+
+#skills {
+    background-color: #f0f0f0; /* Very light gray for Skills section */
+}
+
+#projects {
+    background-color: #ffffff; /* White for Projects section */
+}
+
+#contact {
+    background-color: #f9f9f9; /* Slightly off-white for Contact section */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        margin: 10px; /* Reduce margin on smaller screens */
+    }
+    
+    nav {
+        flex-direction: column; /* Stack navigation links on smaller screens */
+    }
+}
+
+/* Additional Styles */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.about-image {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid #4CAF50;
+}
